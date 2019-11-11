@@ -137,6 +137,16 @@ public class TwilioVoicePlugin extends CordovaPlugin {
             }
 
             @Override
+            public void onReconnecting(Call call, CallException callException) {
+                Log.d(TAG, "Reconnecting");
+            }
+
+            @Override
+            public void onReconnected(Call call) {
+                Log.d(TAG, "Reconnected");
+            }
+
+            @Override
             public void onConnected(Call call) {
                 mCall = call;
 
