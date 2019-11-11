@@ -103,6 +103,7 @@
         <framework src="CoreTelephony.framework" />
         <framework src="PushKit.framework" />
         <framework src="CallKit.framework" />
+        <framework src="src/ios/lib/TwilioVoice.framework" embed="true" custom="true" />
 
         <!-- Add support for background VOIP and audio to the plist -->
         <config-file target="*-Info.plist" parent="UIBackgroundModes">
