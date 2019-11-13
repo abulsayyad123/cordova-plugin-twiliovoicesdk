@@ -9,6 +9,9 @@
       "ios"
     ]
   },
+  "scripts": {
+    "postinstall": "node scripts/dependencies.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jefflinwood/cordova-plugin-twiliovoicesdk.git"
